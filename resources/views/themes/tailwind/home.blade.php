@@ -3,204 +3,446 @@
 @section('content')
 
 
-    <div class="relative flex items-center w-full">
-        <div class="relative z-20 px-8 mx-auto xl:px-5 max-w-7xl">
+    <!DOCTYPE html>
+<html lang="en">
+    <h1>ok</h1>
 
-            <div class="flex flex-col items-center h-full pt-16 pb-56 lg:flex-row">
+    
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intellisence - Smart and Secure Tracking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" media="all">
+    
+</head>
+<body style="font-family: Ubuntu">
 
-                <div class="flex flex-col items-start w-full mb-16 md:items-center lg:pr-12 lg:items-start lg:w-1/2 lg:mb-0">
-
-                    <h2 class="invisible text-sm font-semibold tracking-wide text-gray-700 uppercase transition-none duration-700 ease-out transform translate-y-12 opacity-0 sm:text-base lg:text-sm xl:text-base" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_headline') }}</h2>
-                    <h1 class="invisible pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent transition-none duration-700 ease-out delay-150 transform translate-y-12 opacity-0 bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 scale-10 md:my-5 sm:leading-none lg:text-5xl xl:text-6xl" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_subheadline') }}</h1>
-                    <p class="invisible max-w-2xl mt-0 text-base text-left text-gray-600 transition-none duration-700 ease-out delay-300 transform translate-y-12 opacity-0 md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "scale-110": "scale-100", "opacity-0": "opacity-100" }'>{{ theme('home_description') }}</p>
-                    <div class="invisible w-full mt-5 transition-none duration-700 ease-out transform translate-y-12 opacity-0 delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-                        <div class="rounded-md">
-                            <a href="{{ theme('home_cta_url') }}" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md bg-wave-500 hover:bg-wave-600 focus:outline-none focus:border-wave-600 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-10">
-                                {{ theme('home_cta') }}
-                            </a>
+<!-- Section 1 -->
+<section class="w-full px-3 antialiased bg-gray-900 lg:px-6">
+    <div class="mx-auto max-w-7xl">
+        <nav class="flex items-center w-full h-24 select-none" x-data="{ showMenu: false }">
+            <div class="relative flex flex-wrap items-center justify-between w-full h-24 mx-auto font-medium md:justify-center">
+                <a href="#_" class="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0">
+                    <span class="p-1 text-xl font-black leading-none text-white select-none"><span>Intellicense</span><span class="text-gray-900">.</span></span>
+                </a>
+                <div class="fixed top-0 left-0 z-40 items-center hidden w-full h-full p-3 text-xl bg-gray-900 bg-opacity-50 md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex': showMenu, 'hidden': !showMenu }">
+                    <div class="flex-col w-full h-auto h-full overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
+                        <div class="flex flex-col items-center justify-center w-full h-full mt-12 text-center text-gray-900 md:text-gray-400 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                            <a href="#" class="inline-block px-4 py-2 mx-2 font-medium text-left text-gray-900 md:text-white md:px-0 lg:mx-3 md:text-center">Home</a>
+                            <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-gray-900 md:hover:text-white lg:mx-3 md:text-center">Features</a>
+                      <!--      <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-gray-900 md:hover:text-white lg:mx-3 md:text-center">Blog</a>-->
+                            <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-gray-900 md:hover:text-white lg:mx-3 md:text-center">Contact</a>
                         </div>
-                        <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border-2 border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 md:py-4 md:text-lg md:px-10">
-                                Learn More
-                            </a>
+                        <div class="flex flex-col items-center justify-end w-full h-full pt-4 md:w-1/3 md:flex-row md:py-0">
+                            <a href="#_" class="w-full pl-6 mr-0 text-gray-500 hover:text-white md:pl-0 md:mr-3 lg:mr-5 md:w-auto">Sign In</a>
+                            <a href="#_" class="inline-flex items-center justify-center px-4 py-2 mr-1 text-base font-medium leading-6 text-gray-900 whitespace-no-wrap transition duration-150 ease-in-out bg-white border border-transparent hover:bg-white focus:outline-none focus:border-gray-900 focus:shadow-gray-NaN active:bg-gray-900 rounded-3xl">Sign Up</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex w-full mb-16 lg:w-1/2 lg:mb-0">
-
-                    <div class="relative invisible transition-none duration-1000 delay-100 transform translate-x-12 opacity-0" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-x-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-                        <img src="{{ Voyager::image(theme('home_promo_image')) }}" class="w-full max-w-3xl sm:w-auto">
-                    </div>
-
+                <div @click="showMenu = !showMenu" class="absolute right-0 z-50 flex flex-col items-end w-10 h-10 p-2 mr-4 rounded-full cursor-pointer md:hidden hover:bg-gray-900 hover:bg-opacity-10 text-gray-100" :class="{ 'text-gray-400': showMenu, 'text-gray-100': !showMenu }">
+                    <svg class="w-6 h-6" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg class="w-6 h-6" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
                 </div>
             </div>
-        </div>
+        </nav>
+        <div class="container py-32 mx-auto text-center sm:px-4">
 
-
-
-    </div>
-
-    <div class="relative z-40 -mt-64">
-
-        <svg viewBox="0 0 120 28" class="-mt-64">
-            <defs>
-                <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-            </defs>
-            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
-            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
-            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-        </svg>
-    </div>
-
-    {{-- FEATURES SECTION --}}
-    <section class="relative z-40 w-full pt-10 pb-16 lg:pt-5 xl:-mt-24 bg-gradient-to-b from-wave-500 via-wave-600 to-wave-400">
-
-        <div class="absolute top-0 left-0 z-10 w-full h-full transform -translate-x-1/2 opacity-10">
-            <svg class="w-full h-full text-white opacity-25 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205"><defs/><g fill="#FFF" fill-rule="evenodd"><path d="M182.63 37c14.521 18.317 22.413 41.087 22.37 64.545C205 158.68 159.1 205 102.486 205c-39.382-.01-75.277-22.79-92.35-58.605C-6.939 110.58-2.172 68.061 22.398 37a105.958 105.958 0 00-9.15 43.352c0 54.239 39.966 98.206 89.265 98.206 49.3 0 89.265-43.973 89.265-98.206A105.958 105.958 0 00182.629 37z"/><path d="M103.11 0A84.144 84.144 0 01150 14.21C117.312-.651 78.806 8.94 56.7 37.45c-22.105 28.51-22.105 68.58 0 97.09 22.106 28.51 60.612 38.101 93.3 23.239-30.384 20.26-70.158 18.753-98.954-3.75-28.797-22.504-40.24-61.021-28.47-95.829C34.346 23.392 66.723.002 103.127.006L103.11 0z"/><path d="M116.479 13c36.655-.004 67.014 28.98 69.375 66.234 2.36 37.253-24.089 69.971-60.44 74.766 29.817-8.654 48.753-38.434 44.308-69.685-4.445-31.25-30.9-54.333-61.904-54.014-31.003.32-56.995 23.944-60.818 55.28v-1.777C46.99 44.714 78.096 13.016 116.479 13z"/></g></svg>
-        </div>
-
-        <div class="relative z-20 flex flex-col items-start justify-start px-8 mx-auto sm:items-center max-w-7xl xl:px-5">
-            <h2 class="text-4xl font-medium leading-9 text-white">Awesome Features</h2>
-            <p class="mt-4 leading-6 sm:text-center text-wave-200">Wave has some cool features to help you rapidly build your Software as a Service.<br class="hidden md:block"> Here are a few awesome features you're going to love!</p>
-
-            <div class="grid mt-16 gap-y-10 sm:grid-cols-2 sm:gap-x-8 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-4 lg:gap-20">
-                @foreach(config('features') as $feature)
-                    <div>
-                        <img src="{{ $feature->image }}" class="w-16 rounded sm:mx-auto">
-                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">{{ $feature->title }}</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">{{ $feature->description }}</p>
-                    </div>
-                @endforeach
+            <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl"><span class="block">Intelligent License Tracking</span> <span class="relative inline-block mt-3 text-transparent text-white">Simplified.</span></h1>
+           <!-- <div class="max-w-lg mx-auto mt-6 text-sm text-center md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl text-white"></div>-->
+            <div class="relative flex items-center max-w-md mx-auto mt-12 overflow-hidden text-center rounded-3xl">
+                <input type="text" name="email" placeholder="Email Address" class="w-full h-12 px-6 py-2 font-medium text-gray-900 focus:outline-none">
+                <span class="relative top-0 right-0 block">
+                    <button type="button" class="inline-flex items-center w-32 h-12 px-8 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-gray-700 border border-transparent hover:bg-gray-900 focus:outline-none active:bg-gray-900">
+                        Sign Up
+                    </button>
+                </span>
             </div>
-
+            <div class="mt-8 text-sm text-gray-600">By signing up, you agree to our terms and services.</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="bg-gray-100" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 1440 156" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
-        <style type="text/css">
-            .wave-svg{fill:#0069ff;}
-            .wave-svg-lighter{fill:#4c95fe}
-        </style>
-        <g fill-rule="nonzero">
-            <path class="wave-svg" d="M694,94.437587 C327,161.381336 194,153.298248 0,143.434189 L2.01616501e-13,44.1765618 L1440,27 L1440,121 C1244,94.437587 999.43006,38.7246898 694,94.437587 Z" id="Shape" fill="#0069FF" opacity="0.519587054"></path>
-            <path class="wave-svg" d="M686.868924,95.4364002 C416,151.323752 170.73341,134.021565 1.35713663e-12,119.957876 L0,25.1467017 L1440,8 L1440,107.854321 C1252.11022,92.2972893 1034.37894,23.7359827 686.868924,95.4364002 Z" id="Shape" fill="#0069FF" opacity="0.347991071"></path>
-            <path class="wave-svg-lighter" d="M685.6,30.8323303 C418.7,-19.0491687 170.2,1.94304528 0,22.035593 L0,118 L1440,118 L1440,22.035593 C1252.7,44.2273621 1010,91.4098622 685.6,30.8323303 Z" transform="translate(720.000000, 59.000000) scale(1, -1) translate(-720.000000, -59.000000) "></path>
-        </g>
-    </svg>
+<!-- Section 2 -->
+<section class="px-2 py-32 bg-white md:px-0">
+  <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+    <div class="flex flex-wrap items-center sm:-mx-3">
+      <div class="w-full md:w-1/2 md:px-3">
+        <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">Track all of your</span>
+            <span class="block text-gray-900 xl:inline">licenses and more!</span>
+          </h1>
+          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Instead of only WHEN, know MORE.</p>
+          <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+            <a href="#_" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-gray-900 sm:mb-0 hover:bg-gray-900 sm:w-auto rounded-3xl">
+              Try It Free
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#_" class="flex items-center px-6 py-3 text-gray-500 bg-gray-100 hover:bg-gray-200 hover:text-gray-600 rounded-3xl">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="w-full h-auto overflow-hidden shadow-xl rounded-3xl">
+            <img src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg" class="">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- BEGINNING OF TESTIMONIALS SECTION -->
-    <div id="testimonials">
-        <div class="relative flex items-center justify-center pt-32 pb-12 bg-gray-100 md:pb-32 lg:pb-64 min-w-screen">
-            <div class="max-w-6xl px-10 pb-20 mx-auto bg-gray-100">
-                <div class="flex flex-col items-center lg:flex-row">
-                    <div class="flex flex-col justify-center w-full h-full mb-10 lg:pr-8 sm:w-4/5 md:items-center lg:mb-0 lg:items-start md:w-3/5 lg:w-1/2">
-                        <p class="mb-2 text-base font-medium tracking-tight uppercase text-wave-500">Our customers love our product</p>
-                        <h2
-                            class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-5xl xl:text-6xl">
-                            Testimonials</h2>
-                        <p class="pr-5 my-6 text-lg text-gray-600 md:text-center lg:text-left">This is an example section of where you will add your testimonials for your Software as a Service.</p>
-                        <a href="#_"
-                            class="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave md:py-4 md:text-lg md:px-10">View
-                            Case Studies</a>
-                    </div>
-                    <div class="w-full sm:w-4/5 lg:w-1/2">
-                        <blockquote class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-8">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave allowed me to build the Software as a Service of my dreams!
-                                    </p>
-                                </div>
+<!-- Section 3 -->
+<section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
 
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">Jane Cooper <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 my-5 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave saved us hundreds of development hours. Creating a Software as a Service is now easier than ever with Wave.</p>
-                                </div>
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Doe <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">This is the best solution available for creating your own Software as a Service!</p>
-                                </div>
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+            <img src="https://cdn.devdojo.com/images/december2020/productivity.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
+        </div>
 
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Smith <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rrb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                    </div>
+        <!-- Content -->
+        <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">Stay Secure</h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">By using licensed software, keep getting updates from providers and stay secure!</p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Maximize control
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Track known security bugs
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Get notified about them
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+    </div>
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Content -->
+        <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">Learn - Compare - Be Aware</h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">Not only know your license expiry date, know about your product, alternatives and more!</p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Get suggestions about alternatives
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Compare different apps
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-gray-800 rounded-full"><span class="text-sm font-bold">✓</span></span> Learn more about your options
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+            <img src="https://cdn.devdojo.com/images/december2020/settings.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32">
+        </div>
+    </div>
+</section>
+
+<!-- Section 4 -->
+<section class="py-20 bg-white">
+    <div class="container max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold tracking-tight text-center">Our Features</h2>
+        <p class="mt-2 text-lg text-center text-gray-600">Check out our list of awesome features below.</p>
+        <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
+
+            <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5"></path><circle cx="6" cy="14" r="3"></circle><path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5"></path></svg>
                 </div>
+                <h4 class="text-xl font-medium text-gray-700">Tracking Expiry Dates</h4>
+                <p class="text-base text-center text-gray-500">Each of our plan will provide you a toolkit to track your license.</p>
             </div>
 
-            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 w-full" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
-                <style type="text/css">
-                    .wave-svg-light {
-                        fill: #ffffff;
-                    }
-                </style>
-                <g id="wave" transform="translate(720.000000, 75.000000) scale(1, -1) translate(-720.000000, -75.000000) " fill-rule="nonzero">
-                    <path class="wave-svg-light" d="M694,94.437587 C327,161.381336 194,153.298248 0,143.434189 L2.01616501e-13,44.1765618 L1440,27 L1440,121 C1244,94.437587 999.43006,38.7246898 694,94.437587 Z" id="Shape" fill="#0069FF" opacity="0.519587054"></path>
-                    <path class="wave-svg-light" d="M686.868924,95.4364002 C416,151.323752 170.73341,134.021565 1.35713663e-12,119.957876 L0,25.1467017 L1440,8 L1440,107.854321 C1252.11022,92.2972893 1034.37894,23.7359827 686.868924,95.4364002 Z" id="Shape" fill="#0069FF" opacity="0.347991071"></path>
-                    <path class="wave-svg-light" d="M685.6,30.8323303 C418.7,-19.0491687 170.2,1.94304528 0,22.035593 L0,118 L1440,118 L1440,22.035593 C1252.7,44.2273621 1010,91.4098622 685.6,30.8323303 Z" id="Shape" fill="url(#linearGradient-1)" transform="translate(720.000000, 59.000000) scale(1, -1) translate(-720.000000, -59.000000) "></path>
-                </g>
-            </svg>
+            <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 8a3 3 0 0 1 0 6"></path><path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5"></path><path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8"></path></svg>
+                </div>
+                <h4 class="text-xl font-medium text-gray-700">Notifications</h4>
+                <p class="text-base text-center text-gray-500">Receive notifications. Not only when a license (about to) expires.</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline><line x1="12" y1="12" x2="20" y2="7.5"></line><line x1="12" y1="12" x2="12" y2="21"></line><line x1="12" y1="12" x2="4" y2="7.5"></line><line x1="16" y1="5.25" x2="8" y2="9.75"></line></svg>
+                </div>
+                <h4 class="text-xl font-medium text-gray-700">Alternatives</h4>
+                <p class="text-base text-center text-gray-500">Receive possible alternatives for the software you use, stay updated!</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 9l3 3l-3 3"></path><line x1="13" y1="15" x2="16" y2="15"></line><rect x="3" y="4" width="18" height="16" rx="2"></rect></svg>
+                </div>
+                <h4 class="text-xl font-medium text-gray-700">Security Announcements</h4>
+                <p class="text-base text-center text-gray-500">Know your products. More important, know their weak spots!</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="9.5" y1="11" x2="9.51" y2="11"></line><line x1="14.5" y1="11" x2="14.51" y2="11"></line><path d="M9.5 15a3.5 3.5 0 0 0 5 0"></path><path d="M7 5h1v-2h8v2h1a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3v1h-10v-1a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3"></path></svg>
+                </div>
+                <h4 class="text-xl font-medium text-gray-700">Easy Access to Products</h4>
+                <p class="text-base text-center text-gray-500">With customizable dashboard of yours, access your products easily!</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 rounded-3xl">
+                <div class="p-3 text-white bg-gray-900 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="15" y1="5" x2="15" y2="7"></line><line x1="15" y1="11" x2="15" y2="13"></line><line x1="15" y1="17" x2="15" y2="19"></line><path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"></path></svg>
+                </div>
+                <h4 class="text-xl font-medium text-gray-700">Inform Your Team</h4>
+                <p class="text-base text-center text-gray-500">By integrated communication channels, keep in touch with your team!</p>
+            </div>
 
         </div>
     </div>
-    <!-- END OF TESTIMONIALS SECTION -->
+</section>
 
-    <!-- BEGINNING OF PRICING SECTION -->
-    <div id="pricing" class="relative">
-
-        <div class="relative z-20 px-8 pb-8 mx-auto max-w-7xl xl:px-5">
-            <div class="w-full text-left sm:text-center">
-                <h2 class="pt-12 text-4xl font-extrabold text-gray-900 lg:text-5xl">Example Pricing</h2>
-                <p class="w-full my-1 text-base text-left text-gray-900 opacity-75 sm:my-2 sm:text-center sm:text-xl">It's easy to customize the pricing of your Software as a Service</p>
+<!-- Section 5 -->
+<section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+    <div class="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-8 max-w-7xl">
+        <div class="flex flex-col items-center leading-7 text-center text-gray-900 border-0 border-gray-200">
+            <h2 class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-5xl">
+                Simple, Transparent Pricing
+            </h2>
+            <p class="box-border mt-2 text-xl text-gray-900 border-solid sm:text-2xl">Pricing to fit the needs of any company size. No recurring billing.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0 lg:grid-cols-3">
+            <!-- Price 1 -->
+            <div class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border border-solid lg:-mr-3 sm:my-0 sm:p-6 md:my-8 md:p-8 rounded-3xl">
+                <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
+                    Starter
+                </h3>
+                <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
+                    <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
+                        €14
+                    </p>
+                    <p class="box-border m-0 border-solid" style="border-image: initial;">
+                        / month
+                    </p>
+                </div>
+                <p class="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
+                    Ideal for Startups and Small Companies
+                </p>
+                <ul class="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 border-0 border-gray-200">
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Track 20 license
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Get notifications 
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Limited support
+                    </li>
+                </ul>
+                <button class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-gray-900 no-underline bg-transparent border border-gray-900 cursor-pointer hover:bg-gray-900 hover:border-gray-900 hover:text-white focus-within:bg-gray-900 focus-within:border-gray-900 focus-within:text-white sm:text-base md:text-lg rounded-3xl">
+                    Select Plan
+                </button>
             </div>
-
-            @include('theme::partials.plans')
-
-            <p class="w-full my-8 text-left text-gray-500 sm:my-10 sm:text-center">All plans are fully configurable in the Admin Area.</p>
+            <!-- Price 2 -->
+            <div class="relative z-20 flex flex-col items-center max-w-md p-4 mx-auto my-0 bg-white border-4 border-gray-900 border-solid sm:p-6 md:px-8 md:py-16 rounded-3xl">
+                <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
+                    Basic
+                </h3>
+                <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
+                    <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
+                        €24
+                    </p>
+                    <p class="box-border m-0 border-solid" style="border-image: initial;">
+                        / month
+                    </p>
+                </div>
+                <p class="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
+                    Ideal for medium-size businesses to larger businesses
+                </p>
+                <ul class="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Everything in Starter
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Track 50 license
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        CVE notifications/mitigations
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        E-mail support
+                    </li>
+                </ul>
+                <button class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-gray-900 border cursor-pointer hover:bg-gray-900 hover:border-gray-900 hover:text-white focus-within:bg-gray-900 focus-within:border-gray-900 focus-within:text-white sm:text-base md:text-lg rounded-3xl">
+                    Select Plan
+                </button>
+            </div>
+            <!-- Price 3 -->
+            <div class="relative z-10 flex flex-col items-center max-w-md p-4 mx-auto my-0 border border-solid lg:-ml-3 sm:my-0 sm:p-6 md:my-8 md:p-8 rounded-3xl">
+                <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-gray-200 sm:text-3xl md:text-4xl">
+                    Plus
+                </h3>
+                <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
+                    <p class="box-border m-0 text-6xl font-semibold leading-none border-solid">
+                        €34
+                    </p>
+                    <p class="box-border m-0 border-solid" style="border-image: initial;">
+                        / month
+                    </p>
+                </div>
+                <p class="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
+                    Ideal for larger and enterprise companies
+                </p>
+                <ul class="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Everything in Basic
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Track unlimited license
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        3rd party app integration
+                    </li>
+                    <li class="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
+                        <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-gray-900 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Premium support
+                    </li>
+                </ul>
+                <button class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-gray-900 no-underline bg-transparent border border-gray-900 cursor-pointer hover:bg-gray-900 hover:border-gray-900 hover:text-white focus-within:bg-gray-900 focus-within:border-gray-900 focus-within:text-white sm:text-base md:text-lg rounded-3xl">
+                    Select Plan
+                </button>
+            </div>
         </div>
     </div>
+</section>
+
+<!-- Section 6 -->
+<section class="bg-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+           <!-- <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                </a>
+            </div>
+            
+            
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Blog
+                </a>
+            </div>
+
+            -->
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Team
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Pricing
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Contact
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Terms
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+           <!-- <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+-->
+            <a href="https://www.instagram.com/intellicense.io/" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="https://twitter.com/intellicense_io" class="text-gray-400 hover:text-gray-500" target="_blank">
+                <span class="sr-only">Twitter</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                </svg>
+            </a>
+            <!--
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Dribbble</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" class=""></path>
+                </svg>
+            </a>
+-->
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">© 2021 intellicense.io   -  All rights reserved.</p>
+    </div>
+</section>
+
+<!-- AlpineJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
+</body>
+
+
+</html>
     <!-- END OF PRICING SECTION -->
 
 @endsection
